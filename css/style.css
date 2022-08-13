@@ -1,0 +1,224 @@
+/* para que la estructura tenga estos valores por determinado */
+body{
+ margin: 0;
+ padding: 0;
+ font-size: 13px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* para que los link tenga estos formatos */
+a{
+ text-decoration: none;
+ cursor: pointer;
+}
+/* para mantener a header al 100% del ancho */
+header{
+ width: 100%;
+ height: 100%;
+}
+
+header nav{
+ /* para activar el display flex y poder justificarlo a la derecha */
+ display: flex;
+ justify-content: flex-end;
+}
+header nav .nav-right-section{
+ /* para el tamaño fijo del item */
+ width: 250px;
+ /* para que la altura se ajuste al contenedor */
+ height:auto;
+ /* activando el modo flex */
+ display: flex;
+ /* para que quite los puntos de la lista */
+ list-style:none;
+ /* para justificar el texto al centro */
+ justify-content:center;
+ /* funciona centrador interno de item */
+ align-items: center;
+}
+nav .nav-right-section a{
+ margin-right: 10px;
+ color: #000000;
+}
+nav .nav-right-section .menu-icon{
+ /* ingresando imagen mediante url */
+ background-image:url( https://static.thenounproject.com/png/756729-200.png);
+
+ /* para que la imagen de fondo no se repita */
+ background-repeat:no-repeat;
+ /* para centrar la imagen */
+ background-position:center;
+ /* escala la imagen al mayor tamaño posible sin recortarla ni estirarla */
+ background-size: contain;
+ width: 25px;
+ height: 25px;
+}
+nav .nav-right-section img{
+ border-radius: 50%;
+ margin-left:10px;
+}
+
+/* ######entrando a la edicion del boddy */
+main{
+ margin-top: 150px;
+ text-align:center;
+}
+main .main-logo{
+ width:530px;
+ margin: 0 auto;
+ margin-bottom: 31px;
+}
+main .main-logo img{
+ /* el ancho del logo */
+ width:300px;
+}
+main .main-input{
+ /* ancho del input */
+ width:530px;
+ margin:0 auto;
+ margin-bottom:31px;
+}
+/* editando el contenedor (que es la caja div - primero ) luego el imput que si es un imput */
+main .main-input-container{
+ /* ancho de la zona del input */
+ width:525px;
+ /* para que tenga los border redondeados */
+ border-radius: 100px;
+ /* propiedad especial para que la linea sea delgada y de ese color */
+ border:1px solid #dfe1f5;
+ /* para activar todas las caracteristicas del modo flex */
+ display:flex;
+ /* para justificar el continido al centro */
+ justify-content:center;
+ /* para alinear los elementos dentro , al centro */
+}
+/* Editando el input en si  */
+main .main-input input{
+ /* ancho del input */
+ width: 450px;
+ /* alto del input */
+ height: 40px;
+ /* para anular el borde de la caja */
+ border:none;
+ /* para anular el estilo del contorno de la caja */
+ outline:none;
+}
+main .main-input-container:hover{
+ /* se activa el efecto de sombra y grosor para el borde del input */
+ box-shadow: 0 1px 6px 0 #20212447;
+ border-color:#dfe1e500;
+}
+main .main-input .search-icon{
+ background:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtNTk2LjYxIDU3MC4wNi0xMTAuNzctMTEwLjY3YzI3Ljc1LTMzLjg1NSA0Mi45NjUtNzYuMjE5IDQyLjk2NS0xMTkuOTcgMC0xMDQuNDctODUuMDA0LTE4OS40My0xODkuNDMtMTg5LjQzLTI1LjUyNyAwLTUwLjMxNiA0Ljk5NjEtNzMuNjcyIDE0Ljg5MS0yMi41NyA5LjU3NDItNDIuODI0IDIzLjIxNS02MC4yMTUgNDAuNjA1cy0zMS4wNzggMzcuNjQ1LTQwLjY1MiA2MC4yMTVjLTkuODk4NCAyMy4zNTUtMTQuOTM4IDQ4LjE0NS0xNC45MzggNzMuNjcyIDAgMTA0LjQ3IDg1LjAwNCAxODkuNDMgMTg5LjQzIDE4OS40MyA0My43OTcgMCA4Ni4xMTMtMTUuMjE1IDExOS45Ny00Mi45NjVsMTEwLjY3IDExMC42N2MzLjU2MjUgMy41NjI1IDguMjc3MyA1LjUwMzkgMTMuMjczIDUuNTAzOSA1LjA0MyAwIDkuNzU3OC0xLjk0MTQgMTMuMjczLTUuNTAzOSA3LjM5ODQtNy4yNjE3IDcuMzk4NC0xOS4xNDggMC4wOTM3NS0yNi40NTN6bS0xMDUuMzEtMjMwLjY5YzAgODMuODAxLTY4LjE2OCAxNTEuOTMtMTUxLjkzIDE1MS45My04My44MDEgMC0xNTEuOTMtNjguMTY4LTE1MS45My0xNTEuOTMgMC04My43NTQgNjguMTY4LTE1MS45MyAxNTEuOTMtMTUxLjkzIDgzLjc1NCAwIDE1MS45MyA2OC4xNjggMTUxLjkzIDE1MS45M3oiLz4KPC9zdmc+Cg==');
+ /* para que no se repita */
+ background-repeat:no-repeat;
+ background-position: center;
+ /* para que la imagen escale al mayor tamañoposible sin estirarse */
+ background-size: contain;
+ width:28px;
+ /* height:28px; */
+}
+/* editando las caracteristicas del icono   */
+main .main-input .micro-icon{
+ background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8Zz4KICA8cGF0aCBkPSJtMzY3LjAyIDQ0Ny4yM2gzMi4wNDdjMzYuNDg0IDAgNjYuMDg2LTI5LjQ0MSA2Ni4xODQtNjUuODI4bC0wLjAwMzkwNi0wLjA3ODEyNXYtMi4zNDc3aC0zMy40MDZ2LTMyLjg3NWgzMy40MDZ2LTMwLjc4MWgtMzIuMzJ2LTMyLjg1NWgzMi4yNDJ2LTMxLjk2NWgtMzMuNDA2di0zMi44NzVoMzMuNDA2di0xLjM0MzhjMC0xNy42OTktNi45NDUzLTMzLjY4NC0xOC4yMzQtNDUuNTA0LTEyLjAxNi0xMi42NDgtMjkuMDY2LTIwLjUwNC00Ny44NTItMjAuNTA0aC0zMi4wNDdjLTM2LjU2MiAwLTY2LjE4NCAyOS41Mi02Ni4xODQgNjYuMDA0djEuMzYzM2gzMi4zMmwwLjAwNzgxMyAzMi44NTloLTMyLjM0NHYzMS44NjdoMzIuMzJ2MzIuODc1aC0zMi4zMnYzMC43ODFoMzEuMzM2djMyLjg3NWgtMzEuMzM2djIuNDQ1M2MwIDguNTgyIDEuNzE0OCAxNi43MTUgNC42OTUzIDI0LjE5MSA5LjY1MjMgMjQuNDQ5IDMzLjQ4OCA0MS42OTUgNjEuNDg4IDQxLjY5NXoiLz4KICA8cGF0aCBkPSJtMjc5LjUzIDYwMS43MmgyMDYuODZjOS4yOTMgMCAxNi43OTMtNy41IDE2Ljc5My0xNi43OTMgMC05LjI5My03LjUtMTYuNzkzLTE2Ljc5My0xNi43OTNoLTg2LjU4NnYtNDUuNTA0Yzc2LjQ4NC04LjQwNjIgMTM1Ljk4LTczLjEyOSAxMzUuOTgtMTUxLjc4IDAtOS4yOTMtNy41LTE2Ljc5My0xNi43OTMtMTYuNzkzcy0xNi43OTMgNy41LTE2Ljc5MyAxNi43OTNjMCAzMi45NTMtMTMuMjgxIDYyLjY3Mi0zNC45NDUgODQuMjM4LTIxLjIxMSAyMS4yMTEtNTAuMjk3IDM0LjQ5Mi04Mi42MjEgMzQuODQ4LTAuNTMxMjUtMC4wOTc2NTYtMS4wODU5LTAuMDk3NjU2LTEuNjE3Mi0wLjA5NzY1NnMtMS4wODU5IDAtMS41MzkxIDAuMDk3NjU2Yy0zMi4zMi0wLjQ1MzEyLTYxLjM4Ny0xMy42MzctODIuNjk5LTM0Ljg0OC0yMS41ODYtMjEuNTg2LTM0Ljk0NS01MS4yODUtMzQuOTQ1LTg0LjIzOCAwLTQuMDY2NC0xLjQ0MTQtNy44NTU1LTMuODg2Ny0xMC43NTQtMy4wNzgxLTMuNzEwOS03LjY3NTgtNi4wNTg2LTEyLjkwNi02LjA1ODYtOS4yOTMgMC0xNi43OTMgNy41LTE2Ljc5MyAxNi43OTMgMCA0Mi41MjMgMTcuNDI2IDgwLjkwMiA0NS40MjYgMTA4LjYzIDIzLjgzNiAyMy41NjIgNTUuMzUyIDM5LjM2NyA5MC41NTEgNDMuMTU2djQ1LjUwNGgtMS44OTQ1bC04NC42ODgtMC4wMDM5MDZjLTkuMjkzIDAtMTYuNzkzIDcuNS0xNi43OTMgMTYuNzkzIDAgNS4xNDg0IDIuMzQ3NyA5Ljc0NjEgNi4wNTg2IDEyLjkwNiAyLjc4MTIgMi40NjQ4IDYuNTcwMyAzLjkwNjIgMTAuNjMzIDMuOTA2MnoiLz4KIDwvZz4KPC9zdmc+Cg==');
+ background-repeat:no-repeat;
+ background-position: center;
+ background-size: contain;
+ width:30px;
+ /* height:30px; */
+ cursor:pointer
+}
+
+/* ###section bottom */
+main .main-buttons{
+ width: 530px;
+ margin: 0 auto;
+ margin-bottom:25px;
+}
+
+main .main-buttons div{
+ /* para que haga salto de linea el div y se ponga de bajo */
+ display:inline-block;
+}
+
+main .main-buttons button{
+ height: 36px;
+ background-color: #f2f2f2;
+ border:0;
+ font-size:14px;
+ color:#5f6368;
+ border-radius: 5px;
+ /* espacio interno que tienen los elemetos consu contenedor padre */
+ padding: 0 15px;
+ margin-right:15px;
+}
+
+/* para que tenga efecto cuando se le pasa el mouse */
+main .main-buttons button:hover{
+ border:1px solid #c6c6c6;
+ box-shadow:0 1px 1px #000001;
+ color:#222222;
+}
+/* para el texto  */
+main .main-text{
+ font-size:12px;
+ 
+}
+
+
+
+/* #####footer */
+footer .footer-container-up{
+ width:100%;
+ height:60px;
+ position:absolute;
+ bottom:60px;
+ /* para activar las caracteristicas de grid */
+ display:grid;
+ /* divide por dos columnas */
+ grid-template-rows: 1fr ;
+ 
+ /* para centrarlo */
+ align-items: center;
+
+
+ /* ######pendiente a copiar para los colores */
+ font-size:13px;
+ background-color: #f2f2f2;
+ /* solo se mostrará la parte de arriba el lado */
+ border-top:1px solid #e4e4e4;
+}
+
+footer .footer-container-bottom{
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ bottom:0;
+ width:100%;
+ height:60px;
+ position:absolute;
+ align-items: center;
+ font-size:13px;
+ background-color: #f2f2f2;
+ /* solo se mostrará la parte de arriba el lado */
+ border-top:1px solid #e4e4e4;
+}
+
+footer .footer-left{
+ /* para justificar el texto a la izquierda */
+ justify-self:left;
+}
+footer .footer-right{
+ /* para justificar el texto a la izquierda */
+ justify-self:right;
+}
+/* tambien puede tener link dentro del footer */
+footer ul li a{
+ margin:10px;
+ color:#5f6368;
+}
+
+footer ul{
+ margin:10px;
+ list-style:none;
+ display:flex;
+ padding-left:0;
+}
